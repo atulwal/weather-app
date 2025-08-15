@@ -18,25 +18,25 @@ async function getWeather(city) {
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";    
 
-    if(data.weather[0].main == "clouds"){
+    if(data.weather[0].main == "Clouds"){
         weatherIcon.src = "clouds.png" 
     }
-    else if(data.weather[0].main == "rain"){
+    else if(data.weather[0].main == "Rain"){
         weatherIcon.src = "rain.png"
     }
-    else if(data.weather[0].main == "clear"){
+    else if(data.weather[0].main == "Clear"){
         weatherIcon.src = "clear.png"
     }
-    else if(data.weather[0].main == "drizzle"){
+    else if(data.weather[0].main == "Drizzle"){
         weatherIcon.src = "drizzle.png"
     }
-    else if(data.weather[0].main == "humidity"){
+    else if(data.weather[0].main == "Humidity"){
         weatherIcon.src = "humidity.png"
     }
-    else if(data.weather[0].main == "mist"){
+    else if(data.weather[0].main == "Mist"){
         weatherIcon.src = "mist.png"
     }
-    else if(data.weather[0].main == "snow"){
+    else if(data.weather[0].main == "Snow"){
         weatherIcon.src = "snow.png"
     }
     else{
@@ -50,6 +50,7 @@ async function getWeather(city) {
 searchBtn.addEventListener("click", ()=>{
     getWeather(cityInput.value);
 })
+
 
 
 
