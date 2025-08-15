@@ -18,26 +18,25 @@ async function getWeather(city) {
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
     document.querySelector(".wind").innerHTML = data.wind.speed + "km/h";    
 
-    if(data.weather[0].main == "Clouds"){
+    if(data.weather[0].main == "clouds"){
         weatherIcon.src = "images/clouds.png" 
     }
-    else if(data.weather[0].main == "Rain"){
+    else if(data.weather[0].main == "rain"){
         weatherIcon.src = "images/rain.png"
     }
-    else if(data.weather[0].main == "Clear"){
+    else if(data.weather[0].main == "clear"){
         weatherIcon.src = "images/clear.png"
     }
-    else if(data.weather[0].main == "Drizzle"){
+    else if(data.weather[0].main == "drizzle"){
         weatherIcon.src = "images/drizzle.png"
     }
-    else if(data.weather[0].main == "Humidity"){
+    else if(data.weather[0].main == "humidity"){
         weatherIcon.src = "images/humidity.png"
     }
-    else if(data.weather[0].main == "Mist"){
+    else if(data.weather[0].main == "mist"){
         weatherIcon.src = "images/mist.png"
     }
-    
-    else if(data.weather[0].main == "Snow"){
+    else if(data.weather[0].main == "snow"){
         weatherIcon.src = "images/snow.png"
     }
     else{
@@ -46,11 +45,6 @@ async function getWeather(city) {
     document.querySelector(".weather").style.display = "block";
     document.querySelector(".error").style.display = "none";
     }
-
-    
-    
-
-
 }
 
 searchBtn.addEventListener("click", ()=>{
