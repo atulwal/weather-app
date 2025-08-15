@@ -39,6 +39,10 @@ body {
     border-bottom-left-radius: 20px;
 }
 
+.search-input:hover {
+    border: 2px solid orange;
+}
+
 input[type="text"] {
   padding-left: 7px; 
 }
@@ -52,10 +56,12 @@ input[type="text"] {
     background-color: white;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    cursor: pointer;
 }
 
 .weather {
     color: white;
+    display: none;
 }
 
 .weather-icon {
@@ -93,8 +99,11 @@ input[type="text"] {
     margin-right: 10px;
 }
 
-.humidity .wind {
-    font-size: 28px;
-    margin-top: -6px;
+.error{
+    color: white;
+    margin-top: 15px;
+    font-size: 15px;
+    display: none;
 }
+
 
